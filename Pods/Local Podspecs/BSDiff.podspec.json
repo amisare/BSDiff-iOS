@@ -1,9 +1,9 @@
 {
   "name": "BSDiff",
-  "version": "4.3.0.0",
+  "version": "0.0.1",
   "summary": "bsdiff and bspatch are libraries for ios",
   "description": "bsdiff and bspatch are libraries for ios.",
-  "homepage": "https://github.com/amisare/BSDiff",
+  "homepage": "https://github.com/amisare/BSDiff-iOS",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "amisare": "243297288@qq.com"
   },
   "source": {
-    "git": "https://github.com/amisare/BSDiff.git",
-    "tag": "4.3.0.0"
+    "git": "https://github.com/amisare/BSDiff-iOS.git",
+    "tag": "0.0.1"
   },
   "social_media_url": "https://www.jianshu.com/u/9df9f28ff266",
   "requires_arc": true,
