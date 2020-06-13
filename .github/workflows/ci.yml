@@ -62,6 +62,7 @@ jobs:
           ref: ${{ github.sha }}
       - name: bundle_install
         run: |
+          xcrun simctl list
           bundle install
           pod install
       - name: build_examples
@@ -88,7 +89,9 @@ jobs:
         with:
           ref: ${{ github.sha }}
       - name: bundle_install
-        run: bundle install
+        run: |
+          xcrun simctl list
+          bundle install
       - name: unit_tests
         env:
           DEVELOPER_DIR: ${{ matrix.developer_dir }}
