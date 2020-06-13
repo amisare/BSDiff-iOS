@@ -1,0 +1,6 @@
+framework module BSDiff {
+  umbrella header "BSDiff-umbrella.h"
+
+  export *
+  module * { export * }
+}

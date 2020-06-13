@@ -1,0 +1,25 @@
+PODS:
+  - BSDiff (4.3.0.0):
+    - BSDiff/bsdiff (= 4.3.0.0)
+  - BSDiff/bsdiff (4.3.0.0)
+  - FileMD5Hash (2.0.0)
+
+DEPENDENCIES:
+  - BSDiff (from `.`)
+  - FileMD5Hash
+
+SPEC REPOS:
+  trunk:
+    - FileMD5Hash
+
+EXTERNAL SOURCES:
+  BSDiff:
+    :path: "."
+
+SPEC CHECKSUMS:
+  BSDiff: 72322e0fff0037aa9f9f50df18f5aea9e07f46c2
+  FileMD5Hash: 3ed69cc19a21ff4d30ae8833fc104275ad2c7de0
+
+PODFILE CHECKSUM: 13314f980552422456b1b88da5d579bcc73bf9ff
+
+COCOAPODS: 1.8.4

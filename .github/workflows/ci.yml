@@ -1,0 +1,99 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request 
+# events but only for the master branch
+on:
+  push:
+    branches: 
+      - master
+      - develop
+      - develop-**
+  pull_request:
+    branches: 
+      - master
+      - develop
+      - develop-**
+
+env:
+   LANG: en_US.UTF-8
+
+   BSDiff_WORKSPACE: "BSDiff.xcworkspace"
+   BSDiff_PROJECT: "BSDiff.xcodeproj"
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  Cocoapods_Lint:
+    runs-on: macos-10.15
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.sha }}
+      - name: cocoapods_lint
+        run: pod lib lint --allow-warnings --verbose
+  
+  Carthage_Lint:
+    runs-on: macos-10.15
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.sha }}
+      - name: carthage_lint
+        run: carthage build --no-skip-current
+     
+  Build_Examples:
+    runs-on: macos-10.15
+    strategy:
+      matrix:
+        sdk: [ iOS13.3, iOS13.4 ]
+        include:
+          - sdk: iOS13.3
+            developer_dir: /Applications/Xcode_11.3.1.app
+            destination: OS=13.3,name=iPhone 11 Pro Max
+            scheme: BSDiffExample
+          - sdk: iOS13.4
+            developer_dir: /Applications/Xcode_11.4.app
+            destination: OS=13.4,name=iPhone 11 Pro Max
+            scheme: BSDiffExample
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.sha }}
+      - name: bundle_install
+        run: |
+          bundle install
+          pod install
+      - name: build_examples
+        env:
+          DEVELOPER_DIR: ${{ matrix.developer_dir }}
+        run: |
+          echo ""
+          set -o pipefail
+          xcodebuild -version -sdk
+          xcodebuild build -workspace "${{ env.BSDiff_WORKSPACE }}" -scheme "${{ matrix.scheme }}" -destination "${{ matrix.destination }}" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | bundle exec xcpretty -c;
+    
+  Unit_Tests:
+    runs-on: macos-10.15
+    strategy:
+      matrix:
+        sdk: [iOS13.3]
+        include:
+          - sdk: iOS13.3
+            developer_dir: /Applications/Xcode_11.3.1.app
+            destination: OS=13.3,name=iPhone 11 Pro Max
+            scheme: BSDiff
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.sha }}
+      - name: bundle_install
+        run: bundle install
+      - name: unit_tests
+        env:
+          DEVELOPER_DIR: ${{ matrix.developer_dir }}
+        run: |
+          set -o pipefail
+          xcodebuild build build-for-testing -project "${{ env.BSDiff_PROJECT }}" -scheme "${{ matrix.scheme }}" -destination "${{ matrix.destination }}" -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES ONLY_ACTIVE_ARCH=YES | bundle exec xcpretty -c;
+          xcodebuild analyze test-without-building -project "${{ env.BSDiff_PROJECT }}" -scheme "${{ matrix.scheme }}" -destination "${{ matrix.destination }}" -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES ONLY_ACTIVE_ARCH=YES | bundle exec xcpretty -c;
+      - uses: codecov/codecov-action@v1
