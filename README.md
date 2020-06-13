@@ -1,9 +1,9 @@
 # BSDiff
 
-[![CI Status](https://img.shields.io/travis/amisare/bsdiff_ios.svg?style=flat)](https://travis-ci.org/amisare/BSDiff)
-[![Version](https://img.shields.io/cocoapods/v/bsdiff_ios.svg?style=flat)](https://cocoapods.org/pods/BSDiff)
-[![License](https://img.shields.io/cocoapods/l/bsdiff_ios.svg?style=flat)](https://cocoapods.org/pods/BSDiff)
-[![Platform](https://img.shields.io/cocoapods/p/bsdiff_ios.svg?style=flat)](https://cocoapods.org/pods/BSDiff)
+[![CI](https://github.com/amisare/BSDiff-iOS/workflows/CI/badge.svg)](https://github.com/amisare/BSDiff-iOS/actions)
+[![Version](https://img.shields.io/cocoapods/v/BSDiff.svg?style=flat)](https://cocoapods.org/pods/BSDiff)
+[![License](https://img.shields.io/cocoapods/l/BSDiff.svg?style=flat)](https://cocoapods.org/pods/BSDiff)
+[![Platform](https://img.shields.io/cocoapods/p/BSDiff.svg?style=flat)](https://cocoapods.org/pods/BSDiff)
 
 ## Example
 
