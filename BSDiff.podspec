@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BSDiff'
-  s.version          = '4.3.0.0'
+  s.version          = ENV['BUMP_VERSION'] || '0.0.1'
   s.summary          = 'bsdiff and bspatch are libraries for ios'
 
 # This description is used to generate tags and improve search results.
