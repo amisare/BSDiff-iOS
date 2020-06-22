@@ -16,6 +16,7 @@ jobs:
       run: |
         set -eo pipefail
         export BUMP_VERSION=$(git describe --tags `git rev-list --tags --max-count=1`)
+        pod --version
         pod lib lint --allow-warnings --verbose
         pod trunk push --allow-warnings --verbose
 
