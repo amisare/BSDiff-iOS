@@ -38,6 +38,8 @@ __FBSDID("$FreeBSD: src/usr.bin/bsdiff/bsdiff/bsdiff.c,v 1.1 2005/08/06 01:59:05
 #include <string.h>
 #include <unistd.h>
 
+#include "../bsmacros.h"
+
 #define MIN(x,y) (((x)<(y)) ? (x) : (y))
 
 static void split(off_t *I,off_t *V,off_t start,off_t len,off_t h)
@@ -194,7 +196,7 @@ static void offtout(off_t x,u_char *buf)
 }
 
 __attribute__(( visibility("hidden") ))
-int __bsdiff(int argc,char *argv[])
+int __bsdiff(int argc,char *argv[],char **errmsg)
 {
 	int fd;
 	u_char *old,*new;

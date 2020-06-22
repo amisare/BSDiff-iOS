@@ -8,9 +8,9 @@
 #import "BSDiff.h"
 
 __attribute__(( visibility("hidden") ))
-extern int __bsdiff(int argc, char * argv[]);
+extern int __bsdiff(int argc,char *argv[],char **errmsg);
 __attribute__(( visibility("hidden") ))
-extern int __bspatch(int argc, char * argv[]);
+extern int __bspatch(int argc,char * argv[],char **errmsg);
 
 static dispatch_queue_t bsdiff_processing_queue() {
     static dispatch_queue_t bsdiff_processing_queue;
@@ -100,18 +100,24 @@ static NSMutableArray* BSDiffPatchTasks() {
     
     int argc = 4;
     char * argv[argc];
+    char * errmsg = NULL;
     
     argv[0] = "bsdiff";
     argv[1] = (char *)[oldFilePath UTF8String];
     argv[2] = (char *)[newFilePath UTF8String];
     argv[3] = (char *)[patchFilePath UTF8String];
     
-    int ret = __bsdiff(argc, argv);
-    
+    int ret = __bsdiff(argc, argv, &errmsg);
     if (ret != 0) {
-        _error = [NSError errorWithDomain:BSDiffErrorDomainDiff code:-1 userInfo:@{NSLocalizedDescriptionKey:@"diff fail"}];
+        NSString *_errmsg = (errmsg == NULL) ? @"diff fail" : @(errmsg);
+        _errmsg = [@"bsdiff:" stringByAppendingString:_errmsg];
+        _error = [NSError errorWithDomain:BSDiffErrorDomainDiff
+                                     code:-1
+                                 userInfo:@{NSLocalizedDescriptionKey:_errmsg}];
     }
+    *error = _error;
     
+    if (errmsg) free(errmsg);
     return;
 }
 
@@ -175,20 +181,25 @@ static NSMutableArray* BSDiffPatchTasks() {
     
     int argc = 4;
     char * argv[argc];
+    char * errmsg = NULL;
     
     argv[0] = "bspatch";
     argv[1] = (char *)[oldFilePath UTF8String];
     argv[2] = (char *)[newFilePath UTF8String];
     argv[3] = (char *)[patchFilePath UTF8String];
     
-    int ret = __bspatch(argc, argv);
-
+    int ret = __bspatch(argc, argv, &errmsg);
     if (ret != 0) {
-        _error = [NSError errorWithDomain:BSDiffErrorDomainPatch code:-1 userInfo:@{NSLocalizedDescriptionKey:@"patch fail"}];
+        NSString *_errmsg = (errmsg == NULL) ? @"patch fail" : @(errmsg);
+        _errmsg = [@"bspatch:" stringByAppendingString:_errmsg];
+        _error = [NSError errorWithDomain:BSDiffErrorDomainPatch
+                                     code:-1
+                                 userInfo:@{NSLocalizedDescriptionKey:_errmsg}];
     }
+    *error = _error;
     
+    if (errmsg) free(errmsg);
     return;
-    
 }
 
 + (void)patchWithOldFilePath:(NSString *)oldFilePath

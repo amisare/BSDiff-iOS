@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		039A396DF6103C2471ECC5E47F4857FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		29247A28F3F43933AB4A825112CD5528 /* BSDiff-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB402C37FE9D615AF567B2725293E712 /* BSDiff-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09B516C3E92F2C14CEBF0766888F6CF9 /* BSDiff.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C24CD7B86808FD9EC37EB5FC09C721F /* BSDiff.m */; };
+		3DEDDBE54D7C97C0CC892CDA0A3A305D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		4135145041E4E9EDF47D43A9A14F5E5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		51BF74870EF28D36086DD600CA282B7C /* bsdiff.c in Sources */ = {isa = PBXBuildFile; fileRef = B010C989AC002BB92A1F3A116CB304FE /* bsdiff.c */; };
+		58D3191078DD6E0AFE7E02B2324DCFE7 /* BSDiff-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C13B13782B853F3D24986E1F473F56 /* BSDiff-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5ECD8EF3B627AFBF886D765EB34F8751 /* FileMD5Hash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC24A552ED8F93EB8D0E9548895DFF8 /* FileMD5Hash-dummy.m */; };
 		6A683A54A2878CA3142EA25DCAC47B65 /* FileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C37F144BB8E40D8531BC6BC48A638C /* FileHash.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7185E3CD89D35E1EE75FB7D1CEE55B06 /* bsdiff.c in Sources */ = {isa = PBXBuildFile; fileRef = 91E6CAC0A5885DCFE0589E3B18C9C4BD /* bsdiff.c */; };
+		75E93DAABE8A6D5B20E1CB3F8C6592B2 /* bspatch.c in Sources */ = {isa = PBXBuildFile; fileRef = F38C4EB1AC3B2ABF3E41B7EBBB70C414 /* bspatch.c */; };
 		8CA194E068A689E5B4812EA851C63305 /* Pods-BSDiffExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EA77559EB1B6F843D62378F1C65D57 /* Pods-BSDiffExample-dummy.m */; };
-		8F4BBB6EE28A9967E2C7F11A927F12D9 /* BSDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = CB32CCB1E9944FFAD77CE2FFE37DED19 /* BSDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96CA5CA521B5DE24716FADD2F55A5BC4 /* BSDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F925D411A05D4A226018A07DE02FBFA /* BSDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EB228C876424C9F59198AA81FDC6798 /* FileMD5Hash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19C0460A316415813BB277452191A870 /* FileMD5Hash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A3736AD2536646B94100C0878F095111 /* bspatch.c in Sources */ = {isa = PBXBuildFile; fileRef = BF16F937536ADAB972D5A66F42D4D35D /* bspatch.c */; };
-		B2F9363787C39B2DEF89BE994E674C8D /* BSDiff.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB84D30B159601DFA550170FBF7A6EB /* BSDiff.m */; };
-		C37C247DC8BF07B3735C9C8FCB543024 /* BSDiff-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E51DDCB5462B4BA2D2D1345795B73E6 /* BSDiff-dummy.m */; };
+		AD4FD66FEE3535CF284540D6545DF823 /* bsmacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 2552538051CB4635F8385FF360F9B235 /* bsmacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E159F3234F41222F03C53DFA817E32EC /* BSDiff-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC101E12AF752BA06D9AFAB63D8B533 /* BSDiff-dummy.m */; };
 		F40852EC05E98AC046B8FABFED7033CE /* Pods-BSDiffExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8F4EFC12BC158773664CAF69AA2296 /* Pods-BSDiffExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F91B56B40F7A2F9380326CE006483784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		FE5D2CE717E85BD16F45F9667CBFD8AE /* FileHash.h in Headers */ = {isa = PBXBuildFile; fileRef = E000C200BD6E1DD7DCFB6015198236A5 /* FileHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,39 +44,40 @@
 
 /* Begin PBXFileReference section */
 		03EBC375BDAF9B3A8C8050FCDD486C29 /* FileMD5Hash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FileMD5Hash.framework; path = FileMD5Hash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B4CB3293F45E3F8358D0994D3E5B44 /* BSDiff-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BSDiff-Info.plist"; sourceTree = "<group>"; };
+		0C24CD7B86808FD9EC37EB5FC09C721F /* BSDiff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSDiff.m; path = BSDiff/BSDiff.m; sourceTree = "<group>"; };
 		143136BC7D16458B4554CDF7E9946F99 /* Pods-BSDiffExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BSDiffExample.modulemap"; sourceTree = "<group>"; };
 		19C0460A316415813BB277452191A870 /* FileMD5Hash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FileMD5Hash-umbrella.h"; sourceTree = "<group>"; };
-		1BB84D30B159601DFA550170FBF7A6EB /* BSDiff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSDiff.m; path = BSDiff/BSDiff.m; sourceTree = "<group>"; };
-		276B4B9F102C092FB3D8701E7769B075 /* BSDiff.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BSDiff.modulemap; sourceTree = "<group>"; };
-		2B3985AF5832DE8486C55D4BCA04496B /* BSDiff-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BSDiff-Info.plist"; sourceTree = "<group>"; };
+		2552538051CB4635F8385FF360F9B235 /* bsmacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bsmacros.h; path = BSDiff/bsmacros.h; sourceTree = "<group>"; };
 		2D08D7F04B97D7E09882C2A694080F31 /* FileMD5Hash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FileMD5Hash.modulemap; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		350AB33AF7EEE4390F45F72FBA444D1F /* Pods-BSDiffExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BSDiffExample.debug.xcconfig"; sourceTree = "<group>"; };
-		37F87687F856B1BC7F347961B3AF4BF3 /* BSDiff.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSDiff.xcconfig; sourceTree = "<group>"; };
+		373451601D8C9B0C8253D15EB240D8AA /* BSDiff-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSDiff-prefix.pch"; sourceTree = "<group>"; };
 		3CBD06AF40738DF31C370C2CCE737C8D /* FileMD5Hash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FileMD5Hash.xcconfig; sourceTree = "<group>"; };
+		3CC101E12AF752BA06D9AFAB63D8B533 /* BSDiff-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSDiff-dummy.m"; sourceTree = "<group>"; };
 		3CC76A4B3696EA8E4A7484208771F084 /* FileMD5Hash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FileMD5Hash-prefix.pch"; sourceTree = "<group>"; };
-		51F36F2748229F5499611029F6383D48 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3ED43805E04305722821392F83631754 /* BSDiff.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BSDiff.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		53C37F144BB8E40D8531BC6BC48A638C /* FileHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FileHash.m; path = Library/FileHash.m; sourceTree = "<group>"; };
-		60F884A95D1B3CBBB99C5414EE1E9EF9 /* BSDiff-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSDiff-prefix.pch"; sourceTree = "<group>"; };
 		61EA77559EB1B6F843D62378F1C65D57 /* Pods-BSDiffExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BSDiffExample-dummy.m"; sourceTree = "<group>"; };
 		6BC24A552ED8F93EB8D0E9548895DFF8 /* FileMD5Hash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FileMD5Hash-dummy.m"; sourceTree = "<group>"; };
+		6F925D411A05D4A226018A07DE02FBFA /* BSDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSDiff.h; path = BSDiff/BSDiff.h; sourceTree = "<group>"; };
+		73F706A51182169C1A2727556ACB21E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7499ACBAD843DE930B7A908D332338C2 /* FileMD5Hash-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FileMD5Hash-Info.plist"; sourceTree = "<group>"; };
 		89857E7EDF20D50BC2B86D2B1B9D8620 /* Pods-BSDiffExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BSDiffExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		8F8943DFFAA5F9E2C4215E4D657537B9 /* BSDiff.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSDiff.xcconfig; sourceTree = "<group>"; };
+		91E6CAC0A5885DCFE0589E3B18C9C4BD /* bsdiff.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bsdiff.c; path = "BSDiff/bsdiff-4.3/bsdiff.c"; sourceTree = "<group>"; };
+		9841AE12AE160644B4A9394DBC337554 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9A609BC4E9B9996C90D7088F6938141D /* Pods-BSDiffExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BSDiffExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E51DDCB5462B4BA2D2D1345795B73E6 /* BSDiff-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSDiff-dummy.m"; sourceTree = "<group>"; };
 		9F09961B8C9573C7BDEF5D5BB8A1F255 /* Pods_BSDiffExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BSDiffExample.framework; path = "Pods-BSDiffExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62814BE0D80FE908C6ED604C73CE06C /* BSDiff.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BSDiff.modulemap; sourceTree = "<group>"; };
 		AA8F4EFC12BC158773664CAF69AA2296 /* Pods-BSDiffExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BSDiffExample-umbrella.h"; sourceTree = "<group>"; };
-		AB402C37FE9D615AF567B2725293E712 /* BSDiff-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSDiff-umbrella.h"; sourceTree = "<group>"; };
-		B010C989AC002BB92A1F3A116CB304FE /* bsdiff.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bsdiff.c; path = "BSDiff/bsdiff-4.3/bsdiff.c"; sourceTree = "<group>"; };
-		B7A95EBAD154AF9514E7F518D4755A24 /* BSDiff.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BSDiff.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B6C13B13782B853F3D24986E1F473F56 /* BSDiff-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSDiff-umbrella.h"; sourceTree = "<group>"; };
 		BB3A2B1917934F3088C04AEAF72DFFFB /* Pods-BSDiffExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BSDiffExample-Info.plist"; sourceTree = "<group>"; };
-		BF16F937536ADAB972D5A66F42D4D35D /* bspatch.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bspatch.c; path = "BSDiff/bsdiff-4.3/bspatch.c"; sourceTree = "<group>"; };
-		CB32CCB1E9944FFAD77CE2FFE37DED19 /* BSDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSDiff.h; path = BSDiff/BSDiff.h; sourceTree = "<group>"; };
 		CC5E85417680D17422E31981AB84EDC8 /* BSDiff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BSDiff.framework; path = BSDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E000C200BD6E1DD7DCFB6015198236A5 /* FileHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FileHash.h; path = Library/FileHash.h; sourceTree = "<group>"; };
 		E996B2625FF00F3A42E42925C2CA2415 /* Pods-BSDiffExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BSDiffExample.release.xcconfig"; sourceTree = "<group>"; };
-		FA7176F8DFF3A0EB37D99C707F0EA36D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F38C4EB1AC3B2ABF3E41B7EBBB70C414 /* bspatch.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bspatch.c; path = "BSDiff/bsdiff-4.3/bspatch.c"; sourceTree = "<group>"; };
 		FDB152310824DE8E005411DF238269AE /* Pods-BSDiffExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BSDiffExample-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,11 +98,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F41CDFADF5CAA48BB848F05431AC2C6 /* Frameworks */ = {
+		7EE55D669AA32C6B7BF62D28A01861D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039A396DF6103C2471ECC5E47F4857FF /* Foundation.framework in Frameworks */,
+				3DEDDBE54D7C97C0CC892CDA0A3A305D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2A9BF3654187B139C7D81A1C8B6C93C1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0818102D25656457A58915BFD82686E /* BSDiff */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		3FF181D2BCF883B6E757F58F9671D9E4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,15 +137,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FileMD5Hash";
-			sourceTree = "<group>";
-		};
-		542722BAAC295130062BC839239F6916 /* bsdiff */ = {
-			isa = PBXGroup;
-			children = (
-				B010C989AC002BB92A1F3A116CB304FE /* bsdiff.c */,
-				BF16F937536ADAB972D5A66F42D4D35D /* bspatch.c */,
-			);
-			name = bsdiff;
 			sourceTree = "<group>";
 		};
 		76639772D0910E4774E6518E65B91C84 /* FileMD5Hash */ = {
@@ -166,17 +167,41 @@
 			path = "Target Support Files/Pods-BSDiffExample";
 			sourceTree = "<group>";
 		};
-		89AB9AB329417FE006E544981A66BFFD /* BSDiff */ = {
+		A0818102D25656457A58915BFD82686E /* BSDiff */ = {
 			isa = PBXGroup;
 			children = (
-				CB32CCB1E9944FFAD77CE2FFE37DED19 /* BSDiff.h */,
-				1BB84D30B159601DFA550170FBF7A6EB /* BSDiff.m */,
-				542722BAAC295130062BC839239F6916 /* bsdiff */,
-				E0CC8AE301753C5EAF40A04B8C675D60 /* Pod */,
-				EDE2D9526F1E99F75C76923CCFB51D80 /* Support Files */,
+				6F925D411A05D4A226018A07DE02FBFA /* BSDiff.h */,
+				0C24CD7B86808FD9EC37EB5FC09C721F /* BSDiff.m */,
+				2552538051CB4635F8385FF360F9B235 /* bsmacros.h */,
+				AE74F7CD2B38B30926844942386B7DC0 /* bsdiff */,
+				DF6DE9AFED57A2EC41E683D4D75EF057 /* Pod */,
+				A4FDA7C1158C2723F1BBA380F1AD2125 /* Support Files */,
 			);
 			name = BSDiff;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		A4FDA7C1158C2723F1BBA380F1AD2125 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A62814BE0D80FE908C6ED604C73CE06C /* BSDiff.modulemap */,
+				8F8943DFFAA5F9E2C4215E4D657537B9 /* BSDiff.xcconfig */,
+				3CC101E12AF752BA06D9AFAB63D8B533 /* BSDiff-dummy.m */,
+				09B4CB3293F45E3F8358D0994D3E5B44 /* BSDiff-Info.plist */,
+				373451601D8C9B0C8253D15EB240D8AA /* BSDiff-prefix.pch */,
+				B6C13B13782B853F3D24986E1F473F56 /* BSDiff-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/BSDiff";
+			sourceTree = "<group>";
+		};
+		AE74F7CD2B38B30926844942386B7DC0 /* bsdiff */ = {
+			isa = PBXGroup;
+			children = (
+				91E6CAC0A5885DCFE0589E3B18C9C4BD /* bsdiff.c */,
+				F38C4EB1AC3B2ABF3E41B7EBBB70C414 /* bspatch.c */,
+			);
+			name = bsdiff;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -191,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				E81831182867CA392CCEDACF192EAE2F /* Development Pods */,
+				2A9BF3654187B139C7D81A1C8B6C93C1 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				097BE67E090F78F86FB625DE8941C2D0 /* Pods */,
 				F43D4992DF4A03E15C44AE8B8B31BD11 /* Products */,
@@ -207,36 +232,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E0CC8AE301753C5EAF40A04B8C675D60 /* Pod */ = {
+		DF6DE9AFED57A2EC41E683D4D75EF057 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				B7A95EBAD154AF9514E7F518D4755A24 /* BSDiff.podspec */,
-				FA7176F8DFF3A0EB37D99C707F0EA36D /* LICENSE */,
-				51F36F2748229F5499611029F6383D48 /* README.md */,
+				3ED43805E04305722821392F83631754 /* BSDiff.podspec */,
+				73F706A51182169C1A2727556ACB21E1 /* LICENSE */,
+				9841AE12AE160644B4A9394DBC337554 /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		E81831182867CA392CCEDACF192EAE2F /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				89AB9AB329417FE006E544981A66BFFD /* BSDiff */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		EDE2D9526F1E99F75C76923CCFB51D80 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				276B4B9F102C092FB3D8701E7769B075 /* BSDiff.modulemap */,
-				37F87687F856B1BC7F347961B3AF4BF3 /* BSDiff.xcconfig */,
-				9E51DDCB5462B4BA2D2D1345795B73E6 /* BSDiff-dummy.m */,
-				2B3985AF5832DE8486C55D4BCA04496B /* BSDiff-Info.plist */,
-				60F884A95D1B3CBBB99C5414EE1E9EF9 /* BSDiff-prefix.pch */,
-				AB402C37FE9D615AF567B2725293E712 /* BSDiff-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Pods/Target Support Files/BSDiff";
 			sourceTree = "<group>";
 		};
 		F007BCAF4E90B5F6159C0F883A51CA3E /* Targets Support Files */ = {
@@ -260,12 +263,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0678EB603F0CB5FE5F090FED2526E1B7 /* Headers */ = {
+		0FF00615E2B9C88CA68418D0B1995AAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29247A28F3F43933AB4A825112CD5528 /* BSDiff-umbrella.h in Headers */,
-				8F4BBB6EE28A9967E2C7F11A927F12D9 /* BSDiff.h in Headers */,
+				58D3191078DD6E0AFE7E02B2324DCFE7 /* BSDiff-umbrella.h in Headers */,
+				96CA5CA521B5DE24716FADD2F55A5BC4 /* BSDiff.h in Headers */,
+				AD4FD66FEE3535CF284540D6545DF823 /* bsmacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +295,12 @@
 /* Begin PBXNativeTarget section */
 		29858EA7053AE24FE2399E4AE6E29A4C /* BSDiff */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3ABAF539FE6A6F84597AA377058D7A9 /* Build configuration list for PBXNativeTarget "BSDiff" */;
+			buildConfigurationList = 4784C6FB0FFF17F717FA09C9E8AD56A1 /* Build configuration list for PBXNativeTarget "BSDiff" */;
 			buildPhases = (
-				0678EB603F0CB5FE5F090FED2526E1B7 /* Headers */,
-				CD174FD167C7035796DE3E06E443EA8D /* Sources */,
-				5F41CDFADF5CAA48BB848F05431AC2C6 /* Frameworks */,
-				97AB6799D53EEDE2EAE39BE058D35E38 /* Resources */,
+				0FF00615E2B9C88CA68418D0B1995AAC /* Headers */,
+				6A7E5AC7F3FE043EF1AB3015C04C08B1 /* Sources */,
+				7EE55D669AA32C6B7BF62D28A01861D1 /* Frameworks */,
+				7FDA3320284D5E3EE60FBC9855BD3E44 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -382,7 +386,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97AB6799D53EEDE2EAE39BE058D35E38 /* Resources */ = {
+		7FDA3320284D5E3EE60FBC9855BD3E44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,23 +403,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A7E5AC7F3FE043EF1AB3015C04C08B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E159F3234F41222F03C53DFA817E32EC /* BSDiff-dummy.m in Sources */,
+				7185E3CD89D35E1EE75FB7D1CEE55B06 /* bsdiff.c in Sources */,
+				09B516C3E92F2C14CEBF0766888F6CF9 /* BSDiff.m in Sources */,
+				75E93DAABE8A6D5B20E1CB3F8C6592B2 /* bspatch.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		960A4FF74D02843B4E5EEEBD4FBFE7DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6A683A54A2878CA3142EA25DCAC47B65 /* FileHash.m in Sources */,
 				5ECD8EF3B627AFBF886D765EB34F8751 /* FileMD5Hash-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD174FD167C7035796DE3E06E443EA8D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C37C247DC8BF07B3735C9C8FCB543024 /* BSDiff-dummy.m in Sources */,
-				51BF74870EF28D36086DD600CA282B7C /* bsdiff.c in Sources */,
-				B2F9363787C39B2DEF89BE994E674C8D /* BSDiff.m in Sources */,
-				A3736AD2536646B94100C0878F095111 /* bspatch.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,9 +509,9 @@
 			};
 			name = Release;
 		};
-		5E86C7EFB65BA2549995F559246F0827 /* Release */ = {
+		7A10341662F5FD867D06039EA03BA05C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37F87687F856B1BC7F347961B3AF4BF3 /* BSDiff.xcconfig */;
+			baseConfigurationReference = 8F8943DFFAA5F9E2C4215E4D657537B9 /* BSDiff.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -676,40 +680,6 @@
 			};
 			name = Release;
 		};
-		A025EC89956B83F0CE13A54583EE09DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37F87687F856B1BC7F347961B3AF4BF3 /* BSDiff.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BSDiff/BSDiff-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BSDiff/BSDiff-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/BSDiff/BSDiff.modulemap";
-				PRODUCT_MODULE_NAME = BSDiff;
-				PRODUCT_NAME = BSDiff;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		AB24B8F9A6C8F4F872B63D038701180A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E996B2625FF00F3A42E42925C2CA2415 /* Pods-BSDiffExample.release.xcconfig */;
@@ -747,6 +717,40 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		C36A62D04C622FB624E9357F2B7002C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F8943DFFAA5F9E2C4215E4D657537B9 /* BSDiff.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BSDiff/BSDiff-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BSDiff/BSDiff-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BSDiff/BSDiff.modulemap";
+				PRODUCT_MODULE_NAME = BSDiff;
+				PRODUCT_NAME = BSDiff;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		FBD27E5372D2DFE8D188DF59F9F55226 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -794,6 +798,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4784C6FB0FFF17F717FA09C9E8AD56A1 /* Build configuration list for PBXNativeTarget "BSDiff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C36A62D04C622FB624E9357F2B7002C0 /* Debug */,
+				7A10341662F5FD867D06039EA03BA05C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -808,15 +821,6 @@
 			buildConfigurations = (
 				FBD27E5372D2DFE8D188DF59F9F55226 /* Debug */,
 				85556A122A86601430B974937A1DC5A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E3ABAF539FE6A6F84597AA377058D7A9 /* Build configuration list for PBXNativeTarget "BSDiff" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A025EC89956B83F0CE13A54583EE09DA /* Debug */,
-				5E86C7EFB65BA2549995F559246F0827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

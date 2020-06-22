@@ -36,6 +36,8 @@ __FBSDID("$FreeBSD: src/usr.bin/bsdiff/bspatch/bspatch.c,v 1.1 2005/08/06 01:59:
 #include <unistd.h>
 #include <fcntl.h>
 
+#include "../bsmacros.h"
+
 static off_t offtin(u_char *buf)
 {
 	off_t y;
@@ -55,7 +57,7 @@ static off_t offtin(u_char *buf)
 }
 
 __attribute__(( visibility("hidden") ))
-int __bspatch(int argc,char * argv[])
+int __bspatch(int argc,char * argv[],char **errmsg)
 {
 	FILE * f, * cpf, * dpf, * epf;
 	BZFILE * cpfbz2, * dpfbz2, * epfbz2;
