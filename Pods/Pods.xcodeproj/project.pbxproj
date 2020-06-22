@@ -43,12 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03EBC375BDAF9B3A8C8050FCDD486C29 /* FileMD5Hash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FileMD5Hash.framework; path = FileMD5Hash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03EBC375BDAF9B3A8C8050FCDD486C29 /* FileMD5Hash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FileMD5Hash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B4CB3293F45E3F8358D0994D3E5B44 /* BSDiff-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BSDiff-Info.plist"; sourceTree = "<group>"; };
 		0C24CD7B86808FD9EC37EB5FC09C721F /* BSDiff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSDiff.m; path = BSDiff/BSDiff.m; sourceTree = "<group>"; };
 		143136BC7D16458B4554CDF7E9946F99 /* Pods-BSDiffExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BSDiffExample.modulemap"; sourceTree = "<group>"; };
 		19C0460A316415813BB277452191A870 /* FileMD5Hash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FileMD5Hash-umbrella.h"; sourceTree = "<group>"; };
-		2552538051CB4635F8385FF360F9B235 /* bsmacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bsmacros.h; path = BSDiff/bsmacros.h; sourceTree = "<group>"; };
+		2552538051CB4635F8385FF360F9B235 /* bsmacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bsmacros.h; sourceTree = "<group>"; };
 		2D08D7F04B97D7E09882C2A694080F31 /* FileMD5Hash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FileMD5Hash.modulemap; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		350AB33AF7EEE4390F45F72FBA444D1F /* Pods-BSDiffExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BSDiffExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,28 +56,28 @@
 		3CBD06AF40738DF31C370C2CCE737C8D /* FileMD5Hash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FileMD5Hash.xcconfig; sourceTree = "<group>"; };
 		3CC101E12AF752BA06D9AFAB63D8B533 /* BSDiff-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BSDiff-dummy.m"; sourceTree = "<group>"; };
 		3CC76A4B3696EA8E4A7484208771F084 /* FileMD5Hash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FileMD5Hash-prefix.pch"; sourceTree = "<group>"; };
-		3ED43805E04305722821392F83631754 /* BSDiff.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BSDiff.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3ED43805E04305722821392F83631754 /* BSDiff.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BSDiff.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		53C37F144BB8E40D8531BC6BC48A638C /* FileHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FileHash.m; path = Library/FileHash.m; sourceTree = "<group>"; };
 		61EA77559EB1B6F843D62378F1C65D57 /* Pods-BSDiffExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BSDiffExample-dummy.m"; sourceTree = "<group>"; };
 		6BC24A552ED8F93EB8D0E9548895DFF8 /* FileMD5Hash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FileMD5Hash-dummy.m"; sourceTree = "<group>"; };
 		6F925D411A05D4A226018A07DE02FBFA /* BSDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSDiff.h; path = BSDiff/BSDiff.h; sourceTree = "<group>"; };
-		73F706A51182169C1A2727556ACB21E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		73F706A51182169C1A2727556ACB21E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7499ACBAD843DE930B7A908D332338C2 /* FileMD5Hash-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FileMD5Hash-Info.plist"; sourceTree = "<group>"; };
 		89857E7EDF20D50BC2B86D2B1B9D8620 /* Pods-BSDiffExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BSDiffExample-acknowledgements.plist"; sourceTree = "<group>"; };
 		8F8943DFFAA5F9E2C4215E4D657537B9 /* BSDiff.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BSDiff.xcconfig; sourceTree = "<group>"; };
-		91E6CAC0A5885DCFE0589E3B18C9C4BD /* bsdiff.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bsdiff.c; path = "BSDiff/bsdiff-4.3/bsdiff.c"; sourceTree = "<group>"; };
-		9841AE12AE160644B4A9394DBC337554 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		91E6CAC0A5885DCFE0589E3B18C9C4BD /* bsdiff.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = bsdiff.c; path = "BSDiff/bsdiff-4.3/bsdiff.c"; sourceTree = "<group>"; };
+		9841AE12AE160644B4A9394DBC337554 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9A609BC4E9B9996C90D7088F6938141D /* Pods-BSDiffExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BSDiffExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F09961B8C9573C7BDEF5D5BB8A1F255 /* Pods_BSDiffExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BSDiffExample.framework; path = "Pods-BSDiffExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F09961B8C9573C7BDEF5D5BB8A1F255 /* Pods_BSDiffExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BSDiffExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62814BE0D80FE908C6ED604C73CE06C /* BSDiff.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BSDiff.modulemap; sourceTree = "<group>"; };
 		AA8F4EFC12BC158773664CAF69AA2296 /* Pods-BSDiffExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BSDiffExample-umbrella.h"; sourceTree = "<group>"; };
 		B6C13B13782B853F3D24986E1F473F56 /* BSDiff-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BSDiff-umbrella.h"; sourceTree = "<group>"; };
 		BB3A2B1917934F3088C04AEAF72DFFFB /* Pods-BSDiffExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BSDiffExample-Info.plist"; sourceTree = "<group>"; };
-		CC5E85417680D17422E31981AB84EDC8 /* BSDiff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BSDiff.framework; path = BSDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5E85417680D17422E31981AB84EDC8 /* BSDiff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E000C200BD6E1DD7DCFB6015198236A5 /* FileHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FileHash.h; path = Library/FileHash.h; sourceTree = "<group>"; };
 		E996B2625FF00F3A42E42925C2CA2415 /* Pods-BSDiffExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BSDiffExample.release.xcconfig"; sourceTree = "<group>"; };
-		F38C4EB1AC3B2ABF3E41B7EBBB70C414 /* bspatch.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bspatch.c; path = "BSDiff/bsdiff-4.3/bspatch.c"; sourceTree = "<group>"; };
+		F38C4EB1AC3B2ABF3E41B7EBBB70C414 /* bspatch.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = bspatch.c; path = "BSDiff/bsdiff-4.3/bspatch.c"; sourceTree = "<group>"; };
 		FDB152310824DE8E005411DF238269AE /* Pods-BSDiffExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BSDiffExample-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +146,6 @@
 				53C37F144BB8E40D8531BC6BC48A638C /* FileHash.m */,
 				3FF181D2BCF883B6E757F58F9671D9E4 /* Support Files */,
 			);
-			name = FileMD5Hash;
 			path = FileMD5Hash;
 			sourceTree = "<group>";
 		};
@@ -172,7 +171,6 @@
 			children = (
 				6F925D411A05D4A226018A07DE02FBFA /* BSDiff.h */,
 				0C24CD7B86808FD9EC37EB5FC09C721F /* BSDiff.m */,
-				2552538051CB4635F8385FF360F9B235 /* bsmacros.h */,
 				AE74F7CD2B38B30926844942386B7DC0 /* bsdiff */,
 				DF6DE9AFED57A2EC41E683D4D75EF057 /* Pod */,
 				A4FDA7C1158C2723F1BBA380F1AD2125 /* Support Files */,
@@ -198,6 +196,7 @@
 		AE74F7CD2B38B30926844942386B7DC0 /* bsdiff */ = {
 			isa = PBXGroup;
 			children = (
+				2552538051CB4635F8385FF360F9B235 /* bsmacros.h */,
 				91E6CAC0A5885DCFE0589E3B18C9C4BD /* bsdiff.c */,
 				F38C4EB1AC3B2ABF3E41B7EBBB70C414 /* bspatch.c */,
 			);
