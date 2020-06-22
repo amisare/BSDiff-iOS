@@ -38,7 +38,7 @@ __FBSDID("$FreeBSD: src/usr.bin/bsdiff/bsdiff/bsdiff.c,v 1.1 2005/08/06 01:59:05
 #include <string.h>
 #include <unistd.h>
 
-#include "../bsmacros.h"
+#include "bsmacros.h"
 
 #define MIN(x,y) (((x)<(y)) ? (x) : (y))
 
