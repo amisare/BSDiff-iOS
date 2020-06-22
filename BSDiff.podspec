@@ -36,11 +36,7 @@ bsdiff and bspatch are libraries for ios.
   s.osx.pod_target_xcconfig     = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.nn.BSDiff' }
   s.ios.pod_target_xcconfig     = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.nn.BSDiff' }
   
-  s.source_files = 'BSDiff/*.{m,h}'
-  
-  s.subspec 'bsdiff' do |ss|
-    ss.source_files         = 'BSDiff/**/*.{c,h}'
-    ss.private_header_files  = 'BSDiff/**/*.{h}'
-  end
+  s.source_files = 'BSDiff/*.{m,h}','BSDiff/**/*.{c,h}'
+  s.private_header_files  = 'BSDiff/bsmacros.h'
   
 end

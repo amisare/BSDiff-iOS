@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A96957724A0CDA500FDEE7A /* bsmacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A96957624A0CDA500FDEE7A /* bsmacros.h */; };
+		7A96959424A0D1AF00FDEE7A /* bsmacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A96959324A0D1AF00FDEE7A /* bsmacros.h */; };
 		7AD3EF2F249490A7008A7958 /* BSDiff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD3EF25249490A6008A7958 /* BSDiff.framework */; };
 		7AD3EF34249490A7008A7958 /* BSDiffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD3EF33249490A7008A7958 /* BSDiffTests.m */; };
 		7AD3EF36249490A7008A7958 /* BSDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AD3EF28249490A6008A7958 /* BSDiff.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7A96957624A0CDA500FDEE7A /* bsmacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsmacros.h; sourceTree = "<group>"; };
+		7A96959324A0D1AF00FDEE7A /* bsmacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bsmacros.h; sourceTree = "<group>"; };
 		7AD3EF25249490A6008A7958 /* BSDiff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSDiff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD3EF28249490A6008A7958 /* BSDiff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSDiff.h; sourceTree = "<group>"; };
 		7AD3EF29249490A6008A7958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +85,7 @@
 			children = (
 				7AD3EF28249490A6008A7958 /* BSDiff.h */,
 				7AD3EF80249492F2008A7958 /* BSDiff.m */,
+				7A96959324A0D1AF00FDEE7A /* bsmacros.h */,
 				7AD3EF8224949322008A7958 /* bsdiff-4.3 */,
 				7AD3EF29249490A6008A7958 /* Info.plist */,
 			);
@@ -103,7 +104,6 @@
 		7AD3EF8224949322008A7958 /* bsdiff-4.3 */ = {
 			isa = PBXGroup;
 			children = (
-				7A96957624A0CDA500FDEE7A /* bsmacros.h */,
 				7AD3EF8324949322008A7958 /* bspatch.c */,
 				7AD3EF8424949322008A7958 /* bsdiff.c */,
 			);
@@ -125,7 +125,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A96957724A0CDA500FDEE7A /* bsmacros.h in Headers */,
+				7A96959424A0D1AF00FDEE7A /* bsmacros.h in Headers */,
 				7AD3EF36249490A7008A7958 /* BSDiff.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

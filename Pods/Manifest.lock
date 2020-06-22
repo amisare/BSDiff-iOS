@@ -1,7 +1,5 @@
 PODS:
-  - BSDiff (0.0.1):
-    - BSDiff/bsdiff (= 0.0.1)
-  - BSDiff/bsdiff (0.0.1)
+  - BSDiff (4.3.0.1)
   - FileMD5Hash (2.0.0)
 
 DEPENDENCIES:
@@ -17,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  BSDiff: c579b805195a5d077a22ed60e7c69962fd3fcccf
+  BSDiff: add53322b303fd287a0298688e6b166b294ebb0f
   FileMD5Hash: 3ed69cc19a21ff4d30ae8833fc104275ad2c7de0
 
 PODFILE CHECKSUM: 13314f980552422456b1b88da5d579bcc73bf9ff
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

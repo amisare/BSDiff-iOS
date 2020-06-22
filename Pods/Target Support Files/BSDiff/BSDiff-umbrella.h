@@ -11,7 +11,6 @@
 #endif
 
 #import "BSDiff.h"
-#import "bsmacros.h"
 
 FOUNDATION_EXPORT double BSDiffVersionNumber;
 FOUNDATION_EXPORT const unsigned char BSDiffVersionString[];
