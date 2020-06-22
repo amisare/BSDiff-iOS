@@ -7,7 +7,9 @@
 
 #import "BSDiff.h"
 
+__attribute__(( visibility("hidden") ))
 extern int __bsdiff(int argc, char * argv[]);
+__attribute__(( visibility("hidden") ))
 extern int __bspatch(int argc, char * argv[]);
 
 static dispatch_queue_t bsdiff_processing_queue() {

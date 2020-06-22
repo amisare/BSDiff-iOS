@@ -54,6 +54,7 @@ static off_t offtin(u_char *buf)
 	return y;
 }
 
+__attribute__(( visibility("hidden") ))
 int __bspatch(int argc,char * argv[])
 {
 	FILE * f, * cpf, * dpf, * epf;

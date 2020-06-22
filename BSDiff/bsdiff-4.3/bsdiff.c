@@ -193,6 +193,7 @@ static void offtout(off_t x,u_char *buf)
 	if(x<0) buf[7]|=0x80;
 }
 
+__attribute__(( visibility("hidden") ))
 int __bsdiff(int argc,char *argv[])
 {
 	int fd;
