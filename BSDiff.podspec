@@ -30,7 +30,7 @@ bsdiff and bspatch are libraries for ios.
   s.requires_arc  = true
   s.libraries     = 'bz2.1.0'
   
-  s.osx.deployment_target       = '10.7'
+  s.osx.deployment_target       = '11.0'
   s.ios.deployment_target       = '12.0'
   
   s.osx.pod_target_xcconfig     = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.nn.BSDiff' }
