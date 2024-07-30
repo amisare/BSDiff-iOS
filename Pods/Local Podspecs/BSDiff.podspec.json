@@ -19,7 +19,7 @@
   "requires_arc": true,
   "libraries": "bz2.1.0",
   "platforms": {
-    "osx": "10.7",
+    "osx": "11.0",
     "ios": "12.0"
   },
   "osx": {

@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  BSDiff: 47ca9f9229ece21b0e3442bce20dfe33dd8f97f9
+  BSDiff: cf218faae16cebacaa2f00aae6f2b9dff11703f7
 
 PODFILE CHECKSUM: b64a8b3e936da5dade8a5930b3b53b1d59513591
 

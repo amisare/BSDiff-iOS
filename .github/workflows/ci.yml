@@ -78,11 +78,11 @@ jobs:
     runs-on: macOS-14
     strategy:
       matrix:
-        sdk: [iOS13.3]
+        sdk: [iOS17.5]
         include:
-          - sdk: iOS13.3
-            developer_dir: /Applications/Xcode_11.3.1.app
-            destination: OS=13.3,name=iPhone 11 Pro Max
+          - sdk: iOS17.5
+            developer_dir: /Applications/Xcode_15.0.1.app
+            destination: OS=17.5,name=iPhone 15 Pro
             scheme: BSDiff
     steps:
       - uses: actions/checkout@v4

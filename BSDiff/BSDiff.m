@@ -12,7 +12,7 @@ extern int __bsdiff(int argc,char *argv[],char **errmsg);
 __attribute__(( visibility("hidden") ))
 extern int __bspatch(int argc,char * argv[],char **errmsg);
 
-static dispatch_queue_t bsdiff_processing_queue() {
+static dispatch_queue_t bsdiff_processing_queue(void) {
     static dispatch_queue_t bsdiff_processing_queue;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -22,7 +22,7 @@ static dispatch_queue_t bsdiff_processing_queue() {
     return bsdiff_processing_queue;
 }
 
-static dispatch_group_t bsdiff_completion_group() {
+static dispatch_group_t bsdiff_completion_group(void) {
     static dispatch_group_t bsdiff_completion_group;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -37,7 +37,7 @@ static dispatch_group_t bsdiff_completion_group() {
 
 @implementation BSDiff
 
-static NSLock* BSDiffDiffTasksLock() {
+static NSLock* BSDiffDiffTasksLock(void) {
     static NSLock* lock;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -46,7 +46,7 @@ static NSLock* BSDiffDiffTasksLock() {
     return lock;
 }
 
-static NSMutableArray* BSDiffDiffTasks() {
+static NSMutableArray* BSDiffDiffTasks(void) {
     static NSMutableArray* tasks;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -55,7 +55,7 @@ static NSMutableArray* BSDiffDiffTasks() {
     return tasks;
 }
 
-static NSLock* BSDiffPatchTasksLock() {
+static NSLock* BSDiffPatchTasksLock(void) {
     static NSLock* lock;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -64,7 +64,7 @@ static NSLock* BSDiffPatchTasksLock() {
     return lock;
 }
 
-static NSMutableArray* BSDiffPatchTasks() {
+static NSMutableArray* BSDiffPatchTasks(void) {
     static NSMutableArray* tasks;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
