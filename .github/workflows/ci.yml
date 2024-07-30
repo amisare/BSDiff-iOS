@@ -27,7 +27,7 @@ jobs:
   Cocoapods_Lint:
     runs-on: macOS-14
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
       - name: cocoapods_lint
@@ -36,13 +36,11 @@ jobs:
   Carthage_Lint:
     runs-on: macOS-13
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
       - name: carthage_lint
-        run: |
-          export XCODE_XCCONFIG_FILE=$PWD/fix_carthage_xcode_12.xcconfig
-          carthage build --no-skip-current
+        run: carthage build --no-skip-current --use-xcframeworks
      
   Build_Examples:
     runs-on: macOS-14
