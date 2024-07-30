@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <FileMD5Hash/FileHash.h>
+#import "FileHash.h"
 #import <BSDiff/BSDiff.h>
 
 @interface ViewController ()

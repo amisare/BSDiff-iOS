@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0F414B3A37D5C979A93D17A4 /* Pods_BSDiffExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF9BA6A45887195DFC9CECE /* Pods_BSDiffExample.framework */; };
+		6706F90C2C57B45300E4A367 /* FileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6706F90A2C57B45300E4A367 /* FileHash.m */; };
 		7AD3EF4D24949135008A7958 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD3EF4C24949135008A7958 /* AppDelegate.m */; };
 		7AD3EF5024949135008A7958 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD3EF4F24949135008A7958 /* SceneDelegate.m */; };
 		7AD3EF5324949136008A7958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD3EF5224949136008A7958 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		0E846664240148D843B65499 /* Pods-BSDiffExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSDiffExample.release.xcconfig"; path = "Target Support Files/Pods-BSDiffExample/Pods-BSDiffExample.release.xcconfig"; sourceTree = "<group>"; };
 		4B74606C69CE0F463786CEA4 /* Pods-BSDiffExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSDiffExample.debug.xcconfig"; path = "Target Support Files/Pods-BSDiffExample/Pods-BSDiffExample.debug.xcconfig"; sourceTree = "<group>"; };
+		6706F9092C57B45300E4A367 /* FileHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHash.h; sourceTree = "<group>"; };
+		6706F90A2C57B45300E4A367 /* FileHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHash.m; sourceTree = "<group>"; };
 		7AD3EF4824949135008A7958 /* BSDiffExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSDiffExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD3EF4B24949135008A7958 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7AD3EF4C24949135008A7958 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -99,6 +102,15 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		6706F90B2C57B45300E4A367 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				6706F9092C57B45300E4A367 /* FileHash.h */,
+				6706F90A2C57B45300E4A367 /* FileHash.m */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
 		7AD3EF3F24949135008A7958 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD3EF90249499A7008A7958 /* files */,
+				6706F90B2C57B45300E4A367 /* Vender */,
 				7AD3EF4B24949135008A7958 /* AppDelegate.h */,
 				7AD3EF4C24949135008A7958 /* AppDelegate.m */,
 				7AD3EF4E24949135008A7958 /* SceneDelegate.h */,
@@ -342,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6706F90C2C57B45300E4A367 /* FileHash.m in Sources */,
 				7AD3EF5324949136008A7958 /* ViewController.m in Sources */,
 				7AD3EF4D24949135008A7958 /* AppDelegate.m in Sources */,
 				7AD3EF5E24949137008A7958 /* main.m in Sources */,
@@ -516,7 +530,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JJKX5WDZX;
 				INFOPLIST_FILE = BSDiffExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,7 +549,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JJKX5WDZX;
 				INFOPLIST_FILE = BSDiffExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

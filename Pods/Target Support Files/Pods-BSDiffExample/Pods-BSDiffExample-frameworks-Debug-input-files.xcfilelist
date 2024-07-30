@@ -1,3 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-BSDiffExample/Pods-BSDiffExample-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/BSDiff/BSDiff.framework
-${BUILT_PRODUCTS_DIR}/FileMD5Hash/FileMD5Hash.framework
